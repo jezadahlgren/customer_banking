@@ -26,7 +26,7 @@ def main():
 
     # Print out the interest earned and updated savings account balance with interest earned for the given months.
     print("Savings account summary: ")
-    print('Interest earned: $', format(updated_interest_savings, ',.2f'))
+    print("Interest earned: ${:,.2f}".format(updated_interest_savings)) 
     print('Updated Saving Account Balance: ${:,.2f}'.format(updated_savings_balance))
 
     # Prompt the user to set the CD balance, interest rate, and months for the CD account.
@@ -39,7 +39,7 @@ def main():
 
     # Print out the interest earned and updated CD account balance with interest earned for the given months.
     print("CD account summary: ")
-    print("Interest earned: ${:,.2f}".format(interest_earned_cd))  # corrected line
+    print("Interest earned: ${:,.2f}".format(interest_earned_cd)) 
     print("Updated CD Account Balance: ${:,.2f}".format(updated_cd_balance))
 
 if __name__ == "__main__":
